@@ -1,0 +1,19 @@
+[
+    {
+      "name": "Unauthorized Port Listening",
+      "description": "Unexpected listening port detected",
+      "pattern": "LISTEN",
+      "context": 2,
+      "severity": "High",
+      "score": 7
+    },
+    {
+      "name": "Unusual Protocol Traffic",
+      "description": "Traffic on non-standard ports or protocols",
+      "pattern": "UDP|TCP",
+      "context": 2,
+      "severity": "Medium",
+      "score": 5
+    }
+  ]
+  

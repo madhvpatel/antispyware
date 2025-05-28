@@ -1,0 +1,20 @@
+[
+    {
+    "name": "Crash & Spin Dumps",
+    "description": "Flag crash reports and spin-dump captures indicating app or system hangs.",
+    "file_patterns": [
+      "*.ips",
+      "*.crash",
+      "spindump*.txt",
+      "spin_dump*.txt"
+    ],
+    "regex_patterns": [
+      "(?i)spin dump:",
+      "(?i)Fatal error:",
+      "(?i)Exception Type:",
+      "(?i)Backtrace\\s+\\(for thread\\s+"
+    ],
+    "severity": "High",
+    "tags": ["crash", "hang"]
+  }
+] 

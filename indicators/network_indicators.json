@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Public Outbound Connection",
+      "description": "Connection to a public IP address",
+      "pattern": "((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.|$)){4}",
+      "neg_pattern": "(10\\.|192\\.168\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.)",
+      "context": 2,
+      "severity": "High",
+      "score": 8
+    },
+    {
+      "name": "Promiscuous Mode Interface",
+      "description": "Interface in promiscuous mode",
+      "pattern": "PROMISC",
+      "context": 2,
+      "severity": "Medium",
+      "score": 6
+    },
+    {
+      "name": "ARP Entry Spoofing",
+      "description": "Potential ARP spoofing entry",
+      "pattern": "arp -a",
+      "context": 2,
+      "severity": "Medium",
+      "score": 6
+    }
+  ]
+  

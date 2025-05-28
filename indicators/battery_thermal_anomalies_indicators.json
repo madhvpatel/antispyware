@@ -1,0 +1,20 @@
+[
+    {
+    "name": "Battery & Thermal Anomalies",
+    "description": "Detect abnormal battery or thermal readings suggesting overheating or drainage issues.",
+    "file_patterns": [
+      "powermetrics.txt",
+      "thermal.log",
+      "battery*.txt"
+    ],
+    "regex_patterns": [
+      "(?i)CPU thermal level:",
+      "(?i)Battery health:.*(warn|fail)",
+      "(?i)Thermal pressure:",
+      "(?i)Overheat"
+    ],
+    "severity": "Medium",
+    "tags": ["battery", "thermal", "health"]
+  }
+]
+  

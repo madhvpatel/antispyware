@@ -1,0 +1,27 @@
+[
+    {
+      "name": "VoiceOver Enabled",
+      "description": "VoiceOver accessibility feature enabled",
+      "pattern": "voiceOverEnabled = 1",
+      "context": 2,
+      "severity": "Low",
+      "score": 3
+    },
+    {
+      "name": "Assistive Access Global",
+      "description": "Assistive Access global flag enabled",
+      "pattern": "assistiveAccessEnabled = 1",
+      "context": 2,
+      "severity": "Medium",
+      "score": 5
+    },
+    {
+      "name": "Camera Privacy Off",
+      "description": "Camera privacy setting turned off",
+      "pattern": "isCameraPrivacyEnabled = 0",
+      "context": 2,
+      "severity": "Medium",
+      "score": 6
+    }
+  ]
+  

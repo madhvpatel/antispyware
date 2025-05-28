@@ -1,0 +1,19 @@
+[
+    {
+    "id": 15,
+    "name": "Kernel Panics",
+    "description": "Detect instances of kernel panic by scanning panic logs.",
+    "file_patterns": [
+      "error_log.txt",
+      "panic_*.txt",
+      "kbdebug"
+    ],
+    "regex_patterns": [
+      "(?i)panic\\(", 
+      "(?i)Kernel panic",
+      "(?i)Backtrace for CPU"
+    ],
+    "severity": "High",
+    "tags": ["crash", "panic"]
+  }
+] 

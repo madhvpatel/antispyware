@@ -1,0 +1,20 @@
+[
+    {
+    "id": 20,
+    "name": "Configuration Profiles",
+    "description": "List and flag any non-Apple configuration profiles installed on the device.",
+    "file_patterns": [
+      "*.mobileconfig",
+      "profiles",
+      "configprofiles.txt"
+    ],
+    "regex_patterns": [
+      "(?i)com\\.apple\\.",
+      "(?i)payload\\/ProfileDisplayName",
+      "(?i)PayloadType"
+    ],
+    "severity": "Low",
+    "tags": ["configuration", "profile"]
+  }
+]
+  

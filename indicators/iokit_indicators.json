@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Non-Apple USB Device",
+      "description": "Vendor ID not Apple",
+      "pattern": "VendorID_\\d+",
+      "neg_pattern": "0x05ac",
+      "context": 3,
+      "severity": "Medium",
+      "score": 5
+    },
+    {
+      "name": "Mass Storage Class",
+      "description": "USB class code 08 (Mass Storage)",
+      "pattern": "class 08",
+      "context": 2,
+      "severity": "High",
+      "score": 7
+    },
+    {
+      "name": "Serial Device Class",
+      "description": "USB class code 02 (Communications)",
+      "pattern": "class 02",
+      "context": 2,
+      "severity": "Medium",
+      "score": 5
+    }
+  ]
+  

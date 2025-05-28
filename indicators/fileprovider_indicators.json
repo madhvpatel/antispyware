@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Container Registration Error",
+      "description": "Error registering FileProvider container",
+      "pattern": "registerContainerForURL failed",
+      "context": 3,
+      "severity": "High",
+      "score": 8
+    },
+    {
+      "name": "Aborted Scan (SIGINT)",
+      "description": "FileProvider scan aborted via SIGINT",
+      "pattern": "Received SIGINT",
+      "context": 2,
+      "severity": "Medium",
+      "score": 5
+    },
+    {
+      "name": "Rogue Container Listing",
+      "description": "Unexpected container group listing",
+      "pattern": "containerIDsForGroup",
+      "context": 2,
+      "severity": "High",
+      "score": 7
+    }
+  ]
+  

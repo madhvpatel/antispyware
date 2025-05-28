@@ -1,0 +1,18 @@
+[
+    {
+    "id": 17,
+    "name": "Irregular Shutdowns",
+    "description": "Detect abrupt or abnormal shutdown events (no clean shutdown log entry).",
+    "file_patterns": [
+      "system.log",
+      "shutdown.log"
+    ],
+    "regex_patterns": [
+      "(?i)Previous shutdown cause",
+      "(?i)shutdown: occurred when system was not running",
+      "(?i)Mismatched uptime vs expected"
+    ],
+    "severity": "Medium",
+    "tags": ["shutdown", "stability"]
+  }
+]
